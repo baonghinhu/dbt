@@ -1,0 +1,11 @@
+# Ignore local dbt profiles and generated artifacts
+profiles.yml
+conf/*
+!conf/.gitkeep
+target/
+.dbt/
+dbt_modules/
+
+# Optional: ignore Python virtual environment folders
+venv/
+.env/

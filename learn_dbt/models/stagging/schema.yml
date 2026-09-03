@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: transaction
+    description: >
+      Staging model that combines customer transaction data
+      with customer information from the sales customer table.
+      The model provides transaction-level information including
+      customer details, transaction date, tax amount, and transaction amount.
+
+    columns:
+
+      - name: customer_transaction_id
+        description: >
+          Unique identifier for each customer transaction.
+
+        data_tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        description: >
+          Name of the customer associated with the transaction.
+
+        data_tests:
+          - not_null
+
+      - name: transaction_date
+        description: >
+          Date and time when the transaction occurred.
+
+        data_tests:
+          - not_null
+
+      - name: tax_amount
+        description: >
+          Tax amount charged for the transaction.
+
+        data_tests:
+          - not_null
+
+      - name: transaction_amount
+        description: >
+          Total monetary amount of the transaction.
+
+        data_tests:
+          - not_null

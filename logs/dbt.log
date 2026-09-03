@@ -1,0 +1,130 @@
+[0m09:45:25.314625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D2475D910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D247DF350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D247DDBD0>]}
+
+
+============================== 09:45:25.318660 | ef074ce2-4253-439a-9dd4-c1bf1d28d69c ==============================
+[0m09:45:25.318660 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:45:25.319659 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'D:\\Learn\\dbt\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m09:45:25.349920 [info ] [MainThread]: dbt version: 1.12.0
+[0m09:45:25.353920 [info ] [MainThread]: python version: 3.11.1
+[0m09:45:25.354918 [info ] [MainThread]: python path: C:\Users\ASUS\AppData\Local\Programs\Python\Python311\python.exe
+[0m09:45:25.355923 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m09:45:27.372286 [info ] [MainThread]: Using profiles dir at D:\Learn\dbt\dbt
+[0m09:45:27.373286 [info ] [MainThread]: Using profiles.yml file at D:\Learn\dbt\dbt\profiles.yml
+[0m09:45:27.374281 [info ] [MainThread]: Using dbt_project.yml file at D:\Learn\dbt\dbt\dbt_project.yml
+[0m09:45:27.375280 [info ] [MainThread]: adapter type: bigquery
+[0m09:45:27.376284 [info ] [MainThread]: adapter version: 1.12.0
+[0m09:45:27.376284 [info ] [MainThread]: Configuration:
+[0m09:45:27.377286 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:45:27.378288 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:45:27.379286 [info ] [MainThread]: Required dependencies:
+[0m09:45:27.380281 [debug] [MainThread]: Executing "git --help"
+[0m09:45:27.447120 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:45:27.448119 [debug] [MainThread]: STDERR: "b''"
+[0m09:45:27.448119 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:45:27.449121 [info ] [MainThread]: Connection:
+[0m09:45:27.449121 [info ] [MainThread]:   method: service-account
+[0m09:45:27.450119 [info ] [MainThread]:   database: lerndbt
+[0m09:45:27.451122 [info ] [MainThread]:   execution_project: lerndbt
+[0m09:45:27.451122 [info ] [MainThread]:   schema: learn_dbt
+[0m09:45:27.452123 [info ] [MainThread]:   location: asia-southeast1
+[0m09:45:27.453122 [info ] [MainThread]:   priority: interactive
+[0m09:45:27.454127 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m09:45:27.455122 [info ] [MainThread]:   reservation: None
+[0m09:45:27.457126 [info ] [MainThread]:   impersonate_service_account: None
+[0m09:45:27.459124 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m09:45:27.460123 [info ] [MainThread]:   job_retries: 1
+[0m09:45:27.463120 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m09:45:27.464120 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m09:45:27.466120 [info ] [MainThread]:   job_link_info_level_log: False
+[0m09:45:27.467119 [info ] [MainThread]:   timeout_seconds: 300
+[0m09:45:27.469126 [info ] [MainThread]:   client_id: None
+[0m09:45:27.473131 [info ] [MainThread]:   token_uri: None
+[0m09:45:27.474124 [info ] [MainThread]:   compute_region: None
+[0m09:45:27.475124 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m09:45:27.477128 [info ] [MainThread]:   gcs_bucket: None
+[0m09:45:27.479125 [info ] [MainThread]:   dataproc_batch: None
+[0m09:45:27.480122 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m09:45:28.141123 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m09:45:28.142122 [debug] [MainThread]: On debug: select 1 as id
+[0m09:45:28.142122 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:45:33.299196 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=lerndbt&j=bq:asia-southeast1:f6e3b953-d864-483f-b31a-740ba426c627&page=queryresults
+[0m09:45:33.458155 [debug] [MainThread]: SQL status: OK in 0.158 seconds
+[0m09:45:38.083164 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:45:38.083164 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:45:38.084165 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Learn\dbt\dbt\dbt_project.yml> not found
+
+[0m09:45:38.085165 [debug] [MainThread]: Command `dbt debug` failed at 09:45:38.085165 after 12.89 seconds
+[0m09:45:38.086165 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:45:38.086165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D247FE1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D3363F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D1C50C450>]}
+[0m09:45:38.087202 [debug] [MainThread]: Flushing usage events
+[0m09:45:39.310282 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:49:16.354830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287B2D6A890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287B2D17F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287B2C33790>]}
+
+
+============================== 09:49:16.360827 | afb91ef8-2a0d-49cd-8d8e-0eb2181e197b ==============================
+[0m09:49:16.360827 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:49:16.361832 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'D:\\Learn\\dbt\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init learn_dbt', 'log_path': 'logs'}
+[0m09:49:16.387026 [info ] [MainThread]: A project called learn_dbt already exists here.
+[0m09:49:16.389025 [debug] [MainThread]: Command `dbt init` succeeded at 09:49:16.389025 after 0.19 seconds
+[0m09:49:16.390031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287B2C1B790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287AAAEC410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287AAAEC3D0>]}
+[0m09:49:16.391036 [debug] [MainThread]: Flushing usage events
+[0m09:49:18.317142 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:50:21.305472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018213049250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001821794FF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018217915E10>]}
+
+
+============================== 09:50:21.310474 | b33de3f3-ee92-4e4e-bd91-ece932f750a6 ==============================
+[0m09:50:21.310474 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:50:21.311473 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'D:\\Learn\\dbt\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init learn_dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m09:50:21.336472 [info ] [MainThread]: A project called learn_dbt already exists here.
+[0m09:50:21.337477 [debug] [MainThread]: Command `dbt init` succeeded at 09:50:21.337477 after 0.18 seconds
+[0m09:50:21.338474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182179B9A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018217863950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001821784B790>]}
+[0m09:50:21.339473 [debug] [MainThread]: Flushing usage events
+[0m09:50:22.594483 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:14:32.749228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BDC9E1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BDBE3810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BDBCB310>]}
+
+
+============================== 16:14:32.752912 | 470e32ee-6e63-41a5-99cd-f11dd860ef43 ==============================
+[0m16:14:32.752912 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:14:32.753959 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Learn\\dbt\\dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m16:14:32.754912 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Learn\dbt\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:14:32.755926 [debug] [MainThread]: Command `dbt test` failed at 16:14:32.755926 after 0.11 seconds
+[0m16:14:32.755926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198B5A4C4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BDC9E310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BDC9D150>]}
+[0m16:14:32.757469 [debug] [MainThread]: Flushing usage events
+[0m16:14:33.867918 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.204"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.204","name":"MainReportVersion","pid":24188,"thread":"tokio-rt-worker","ts":"2026-08-09T02:11:01.993417Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ASUS\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":24188,"thread":"tokio-rt-worker","ts":"2026-08-09T02:11:01.993977Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":24188,"thread":"tokio-rt-worker","ts":"2026-08-09T02:11:02.037026Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"debug","msg":"License from file C:\\Users\\ASUS\\.dbt\\license.trial is in refresh window, attempting remote refresh","name":"Generic","pid":24188,"thread":"tokio-rt-worker","ts":"2026-08-09T02:11:03.457838Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"debug","msg":"Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/","name":"Generic","pid":24188,"thread":"main","ts":"2026-08-09T02:11:04.080156Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"debug","msg":"Trial license retrieved","name":"Generic","pid":24188,"thread":"main","ts":"2026-08-09T02:11:04.876547Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"debug","msg":"License loaded from trial license server","name":"Generic","pid":24188,"thread":"tokio-rt-worker","ts":"2026-08-09T02:11:05.494378Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-08-09T02:11:05+00:00\",\n  \"expires_at\": \"2026-08-22T03:02:56+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"e1f798e607820f53bdfd18c2697a56579bf1b2cb427008f90fc7c116f6cfc783\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-08-08T03:02:56+00:00\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"info","msg":"{\n  \"status\": \"valid\",\n  \"licensing_enabled\": true,\n  \"features\": [\n    \"compare\",\n    \"strict-static-analysis\"\n  ],\n  \"issued_at\": \"2026-08-09T02:11:05+00:00\",\n  \"expires_at\": \"2026-08-22T03:02:56+00:00\",\n  \"license_type\": \"trial\",\n  \"machine_id\": \"e1f798e607820f53bdfd18c2697a56579bf1b2cb427008f90fc7c116f6cfc783\",\n  \"days_remaining\": 13,\n  \"trial_start_date\": \"2026-08-08T03:02:56+00:00\"\n}","name":"ShowNode","pid":24188,"thread":"tokio-rt-worker","ts":"2026-08-09T02:11:06.049819Z"}}
+{"data":{"completed_at":"2026-08-09T02:11:06.186074Z","elapsed":4.195335388183594,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019fe449-aea5-7652-a8e0-7407e906de1d","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [4.2s]","name":"CommandCompleted","pid":24188,"thread":"tokio-rt-worker","ts":"2026-08-09T02:11:06.187931Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.204"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a06129-893b-7bf3-8679-984b0333b6ca","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.204","name":"MainReportVersion","pid":2104,"thread":"tokio-rt-worker","ts":"2026-09-02T08:08:27.230310Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ASUS\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a06129-893b-7bf3-8679-984b0333b6ca","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":2104,"thread":"tokio-rt-worker","ts":"2026-09-02T08:08:27.230358Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a06129-893b-7bf3-8679-984b0333b6ca","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":2104,"thread":"tokio-rt-worker","ts":"2026-09-02T08:08:27.363523Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a06129-893b-7bf3-8679-984b0333b6ca","level":"debug","msg":"Trial license from file C:\\Users\\ASUS\\.dbt\\license.trial is expired","name":"Generic","pid":2104,"thread":"tokio-rt-worker","ts":"2026-09-02T08:08:27.396284Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-22T03:02:56+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a06129-893b-7bf3-8679-984b0333b6ca","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-22T03:02:56+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":2104,"thread":"tokio-rt-worker","ts":"2026-09-02T08:08:27.397335Z"}}
+{"data":{"completed_at":"2026-09-02T08:08:28.165126Z","elapsed":0.938378095626831,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a06129-893b-7bf3-8679-984b0333b6ca","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [938ms]","name":"CommandCompleted","pid":2104,"thread":"tokio-rt-worker","ts":"2026-09-02T08:08:28.171849Z"}}
+[0m15:22:55.070490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D369540510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3695439D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D369542FD0>]}
+
+
+============================== 15:22:55.070490 | a3cdf711-d2fe-4dda-a881-b5d5511e6915 ==============================
+[0m15:22:55.070490 [info ] [MainThread]: Running with dbt=1.12.0
+[0m15:22:55.086123 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'D:\\Learn\\dbt\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt compile', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m15:22:55.086123 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Learn\dbt\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:22:55.086123 [debug] [MainThread]: Command `dbt compile` failed at 15:22:55.086123 after 0.38 seconds
+[0m15:22:55.086123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D36939F910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D36939C690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3694647D0>]}
+[0m15:22:55.086123 [debug] [MainThread]: Flushing usage events
+[0m15:22:56.248100 [debug] [MainThread]: An error was encountered while trying to flush usage events

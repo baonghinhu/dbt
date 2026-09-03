@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: wide_world_importers
+    database: vit-lam-data
+    schema: wide_world_importers
+    description: "Source tables from the Wide World Importers dataset in BigQuery."
+
+    tables:
+      - name: application__cities
+      - name: application__countries
+      - name: application__delivery_methods
+      - name: application__payment_methods
+      - name: application__people
+      - name: application__state_provinces
+      - name: application__system_parameters
+      - name: application__transaction_types
+
+      - name: external_categories
+      - name: external_category_target
+      - name: external_customer_membership
+      - name: external_customer_target
+      - name: external_salesperson_target
+      - name: external_stock_item
+
+      - name: purchasing__purchase_order_lines
+      - name: purchasing__purchase_orders
+      - name: sales__customer_transactions
+      - name: sales__customers
